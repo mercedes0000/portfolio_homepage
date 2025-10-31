@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日日日証券</title>
+    <link rel="stylesheet" href="/portfolio_homepage/fees/common.css">
+    <script src="/portfolio_homepage/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="/portfolio_homepage/">日日日証券</a>
+            </div>
+            <nav>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul id="nav-menu">
+                    <li><a href="/portfolio_homepage/">ホーム</a></li>
+                    <li><a href="/portfolio_homepage/#products">商品</a></li>
+                    <li><a href="/portfolio_homepage/#about">会社概要</a></li>
+                    <li><a href="/portfolio_homepage/#contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="fees">
+        <h1>手数料について</h1>
+        <p>当社が提供する各種金融商品の手数料は以下の通りです。各商品により手数料が異なりますので、詳細をご確認ください。</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>商品</th>
+                    <th>手数料率</th>
+                    <th>最低手数料</th>
+                    <th>備考</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>株式取引</td>
+                    <td>約定代金の50%</td>
+                    <td>5,000円</td>
+                    <td>取引ごとに発生</td>
+                </tr>
+                <tr>
+                    <td>投資信託</td>
+                    <td>購入金額の15.0%</td>
+                    <td>無料</td>
+                    <td>ファンドにより異なります</td>
+                </tr>
+                <tr>
+                    <td>外国為替取引</td>
+                    <td>1ロットあたり3,000円</td>
+                    <td>無料</td>
+                    <td>1ロット＝100,000通貨</td>
+                </tr>
+                <tr>
+                    <td>債券取引</td>
+                    <td>約定代金の9.3%</td>
+                    <td>100,000円</td>
+                    <td>国債、地方債など</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>※手数料は市場の状況や商品によって変更される場合があります。詳細は担当者までお問い合わせください。</p>
+    </div>
+    <section id="second-header">
+        <div class="info-links">
+            <ul>
+                <li><a href="/portfolio_homepage/#about">会社概要</a></li>
+                <li><a href="/portfolio_homepage/privacy/">個人情報保護方針</a></li>
+                <li><a href="/portfolio_homepage/terms/">ご利用条件</a></li>
+                <li><a href="/portfolio_homepage/risk/">リスク情報</a></li>
+                <li><a href="/portfolio_homepage/fees/">手数料について</a></li>
+                <li><a href="/portfolio_homepage/law/">関係法令</a></li>
+                <li><a href="/portfolio_homepage/antisocial/">反社会的勢力排除方針</a></li>
+            </ul>
+        </div>
+        <div class="contact-info">
+            <p>お問い合わせ：0120-123-456</p>
+            <p>受付時間：平日 9:00 - 17:00</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 hihihi securities Co., Ltd. All rights reserved.</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
