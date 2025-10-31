@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日日日証券</title>
+    <link rel="stylesheet" href="/portfolio_homepage/products_lineup/common.css">
+    <script src="/portfolio_homepage/products_lineup/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="/portfolio_homepage/">日日日証券</a>
+            </div>
+            <nav>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul id="nav-menu">
+                    <li><a href="/portfolio_homepage/">ホーム</a></li>
+                    <li><a href="/portfolio_homepage/#products">商品</a></li>
+                    <li><a href="/portfolio_homepage/#about">会社概要</a></li>
+                    <li><a href="/portfolio_homepage/#contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="product-lineup">
+        <h2>商品ラインナップ</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <h3>金地金</h3>
+                <p>純度99.99%の高品質な金の地金です。</p>
+                <button class="details-btn" data-details="gold" id="#kinzigane">詳細を見る</button>
+            </div>
+            <div class="product-card">
+                <h3>金貨</h3>
+                <p>高い希少価値を持つ金貨です。</p>
+                <button class="details-btn" data-details="coin">詳細を見る</button>
+            </div>
+            <div class="product-card">
+                <h3>金ETF</h3>
+                <p>金に連動した投資信託です。</p>
+                <button class="details-btn" data-details="etf">詳細を見る</button>
+            </div>
+            <div class="product-card">
+                <h3>金ジュエリー</h3>
+                <p>華やかで高級感あふれる金製ジュエリー。</p>
+                <button class="details-btn" data-details="jewelry">詳細を見る</button>
+            </div>
+            <div class="product-card">
+                <h3>金関連株</h3>
+                <p>金をテーマにした投資です。</p>
+                <button class="details-btn" data-details="fund">詳細を見る</button>
+            </div>
+            <div class="product-card">
+                <h3>純金積立</h3>
+                <p>毎月一定額で金を少しずつ購入。</p>
+                <button class="details-btn" data-details="savings">詳細を見る</button>
+            </div>
+        </div>
+    </section>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title">商品詳細</h2>
+            <p id="modal-details"></p>
+        </div>
+    </div>
+    <section id="second-header">
+        <div class="info-links">
+            <ul>
+                <li><a href="/portfolio_homepage/#about">会社概要</a></li>
+                <li><a href="/portfolio_homepage/privacy/">個人情報保護方針</a></li>
+                <li><a href="/portfolio_homepage/terms/">ご利用条件</a></li>
+                <li><a href="/portfolio_homepage/risk/">リスク情報</a></li>
+                <li><a href="/portfolio_homepage/fees/">手数料について</a></li>
+                <li><a href="/portfolio_homepage/law/">関係法令</a></li>
+                <li><a href="/portfolio_homepage/antisocial/">反社会的勢力排除方針</a></li>
+            </ul>
+        </div>
+        <div class="contact-info">
+            <p>お問い合わせ：0120-123-456</p>
+            <p>受付時間：平日 9:00 - 17:00</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 hihihi securities Co., Ltd. All rights reserved.</p>
+    </footer>
+</body>
+</html>
