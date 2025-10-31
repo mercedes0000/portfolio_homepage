@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日日日証券</title>
+    <link rel="stylesheet" href="/portfolio_homepage/risk/common.css">
+    <script src="/portfolio_homepage/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="/portfolio_homepage/">日日日証券</a>
+            </div>
+            <nav>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul id="nav-menu">
+                    <li><a href="/portfolio_homepage/">ホーム</a></li>
+                    <li><a href="/portfolio_homepage/#products">商品</a></li>
+                    <li><a href="/portfolio_homepage/#about">会社概要</a></li>
+                    <li><a href="/portfolio_homepage/#contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="risk">
+        <h1>リスク情報</h1>
+        <p>投資にはリスクが伴います。以下のリスクを理解した上で、十分な検討を行ったうえで投資判断を行ってください。</p>
+        <h2>市場リスク</h2>
+        <p>市場の動向により、投資商品の価値が変動する可能性があります。特に、株式や債券などは市場全体の影響を受けやすいです。</p>
+        <h2>信用リスク</h2>
+        <p>投資先企業や発行体の信用状況により、元本が保証されない場合があります。特に、格付けの低い企業や新興市場に投資する際は注意が必要です。</p>
+        <h2>流動性リスク</h2>
+        <p>市場で売買する際に、思うような価格で売却できないリスクがあります。特に、流動性の低い商品はこのリスクが高まります。</p>
+        <h2>為替リスク</h2>
+        <p>海外投資を行う場合、為替レートの変動により、投資収益が影響を受けることがあります。</p>
+        <p>詳しい内容については、専門家に相談することをお勧めします。</p>
+    </div>
+    <section id="second-header">
+        <div class="info-links">
+            <ul>
+                <li><a href="/portfolio_homepage/#about">会社概要</a></li>
+                <li><a href="/portfolio_homepage/privacy/">個人情報保護方針</a></li>
+                <li><a href="/portfolio_homepage/terms/">ご利用条件</a></li>
+                <li><a href="/portfolio_homepage/risk/">リスク情報</a></li>
+                <li><a href="/portfolio_homepage/fees/">手数料について</a></li>
+                <li><a href="/portfolio_homepage/law/">関係法令</a></li>
+                <li><a href="/portfolio_homepage/antisocial/">反社会的勢力排除方針</a></li>
+            </ul>
+        </div>
+        <div class="contact-info">
+            <p>お問い合わせ：0120-123-456</p>
+            <p>受付時間：平日 9:00 - 17:00</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 hihihi securities Co., Ltd. All rights reserved.</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
