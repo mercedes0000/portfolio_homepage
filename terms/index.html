@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日日日証券</title>
+    <link rel="stylesheet" href="/portfolio_homepage/terms/common.css">
+    <script src="/portfolio_homepage/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="/portfolio_homepage/">日日日証券</a>
+            </div>
+            <nav>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul id="nav-menu">
+                    <li><a href="/portfolio_homepage/">ホーム</a></li>
+                    <li><a href="/portfolio_homepage/#products">商品</a></li>
+                    <li><a href="/portfolio_homepage/#about">会社概要</a></li>
+                    <li><a href="/portfolio_homepage/#contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="terms-of-use">
+        <h1>ご利用条件</h1>
+        <p>本ウェブサイトを利用する前に、以下の利用条件をよくお読みください。利用を開始することで、これらの条件に同意したことになります。</p>
+        <h2>1. 利用規約の承諾</h2>
+        <p>本利用規約は、弊社のウェブサイト（以下「本サイト」といいます）を利用するすべての方に適用されます。本サイトを利用することにより、利用者は本利用規約に同意したものとみなされます。</p>
+        <h2>2. サービスの内容</h2>
+        <p>弊社は、本サイトを通じて提供する情報、サービス、商品（以下「サービス」といいます）の内容を随時変更することがあります。変更後のサービスの利用は、改定された利用条件に基づくものとします。</p>
+        <h2>3. 知的財産権</h2>
+        <p>本サイトに掲載されているすべてのコンテンツ（テキスト、画像、動画など）の著作権は、弊社またはそのライセンサーに帰属します。無断での複製、転載、配布は禁止されています。</p>
+        <h2>4. 禁止事項</h2>
+        <p>以下の行為を禁止します。</p>
+        <ul>
+            <li>法令に違反する行為</li>
+            <li>他者の権利を侵害する行為</li>
+            <li>本サイトの運営を妨害する行為</li>
+            <li>不正アクセスやデータの改ざんを行う行為</li>
+        </ul>
+        <h2>5. 免責事項</h2>
+        <p>弊社は、本サイトに掲載される情報の正確性や完全性について保証するものではありません。利用者が本サイトを利用することによって生じた損害について、弊社は一切の責任を負いません。</p>
+        <h2>6. 利用条件の変更</h2>
+        <p>本利用条件は、弊社の判断により随時変更されることがあります。変更があった場合は、本サイト上で告知します。</p>
+        <h2>7. 準拠法</h2>
+        <p>本利用条件は、日本法に準拠します。利用者と弊社との間で生じた紛争については、東京地方裁判所を第一審の専属的管轄裁判所とします。</p>
+    </div>
+    <section id="second-header">
+        <div class="info-links">
+            <ul>
+                <li><a href="/portfolio_homepage/#about">会社概要</a></li>
+                <li><a href="/portfolio_homepage/privacy/">個人情報保護方針</a></li>
+                <li><a href="/portfolio_homepage/terms/">ご利用条件</a></li>
+                <li><a href="/portfolio_homepage/risk/">リスク情報</a></li>
+                <li><a href="/portfolio_homepage/fees/">手数料について</a></li>
+                <li><a href="/portfolio_homepage/law/">関係法令</a></li>
+                <li><a href="/portfolio_homepage/antisocial/">反社会的勢力排除方針</a></li>
+            </ul>
+        </div>
+        <div class="contact-info">
+            <p>お問い合わせ：0120-123-456</p>
+            <p>受付時間：平日 9:00 - 17:00</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 hihihi securities Co., Ltd. All rights reserved.</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
