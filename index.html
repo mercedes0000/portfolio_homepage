@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HXMXEDEZY8"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-HXMXEDEZY8');
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日日日証券</title>
+    <link rel="stylesheet" href="/common.css">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="/">日日日証券</a>
+            </div>
+            <nav>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul id="nav-menu">
+                    <li><a href="/">ホーム</a></li>
+                    <li><a href="/products_lineup/">商品</a></li>
+                    <li><a href="/#about">会社概要</a></li>
+                    <li><a href="/#contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="/video/video.mp4" type="video/mp4">
+            お使いのブラウザは動画タグに対応していません。
+        </video>
+        <div class="content">
+            <h1>日日日証券へようこそ</h1>
+            <p>私たちはお客様のニーズに合った商品を提供します。</p>
+        </div>
+    </div>
+    <section class="product-lineup" id="products">
+        <h2>商品ラインナップ</h2>
+        <div class="slider">
+            <div class="card-container">
+                <div class="product-card">
+                    <img src="https://placehold.jp/530x353.png" alt="金地金">
+                    <h3>金地金</h3>
+                    <p>金を物理的に保有し、安全な資産として管理します。</p>
+                    <button class="btn" onclick="openModal('金地金', '金地金は最も伝統的な投資方法です。')"><a href="/products_lineup/">詳細を見る</a></button>
+                </div>
+                <div class="product-card">
+                    <img src="https://placehold.jp/530x353.png" alt="金貨">
+                    <h3>金貨</h3>
+                    <p>金貨をコレクションや投資として保有する商品です。</p>
+                    <button class="btn" onclick="openModal('金貨', '金貨は希少性とコレクション性を兼ね備えた投資です。')"><a href="/products_lineup/">詳細を見る</a></button>
+                </div>
+                <div class="product-card">
+                    <img src="https://placehold.jp/530x353.png" alt="金ETF">
+                    <h3>金ETF</h3>
+                    <p>金価格に連動する上場投資信託（ETF）です。</p>
+                    <button class="btn" onclick="openModal('金ETF', '金ETFは、金価格に投資する簡単な方法です。')"><a href="/products_lineup/">詳細を見る</a></button>
+                </div>
+                <div class="product-card">
+                    <img src="https://placehold.jp/530x353.png" alt="金のジュエリー">
+                    <h3>金のジュエリー</h3>
+                    <p>美しいデザインの金のジュエリーをご紹介。</p>
+                    <button class="btn" onclick="openModal('金のジュエリー', '金のジュエリーは、コレクションやギフトに最適です。')"><a href="/products_lineup/">詳細を見る</a></button>
+                </div>
+                <div class="product-card">
+                    <img src="https://placehold.jp/530x353.png" alt="金ファンド">
+                    <h3>金ファンド</h3>
+                    <p>複数の金商品に分散投資できます。</p>
+                    <button class="btn" onclick="openModal('金ファンド', '金ファンドは手軽に金に投資する方法です。')"><a href="/products_lineup/">詳細を見る</a></button>
+                </div>
+                <div class="product-card">
+                    <img src="https://placehold.jp/530x353.png" alt="金ファンド">
+                    <h3>純金積立</h3>
+                    <p>毎月一定額で金を少しずつ購入。</p>
+                    <button class="btn" onclick="openModal('純金積立', '毎月一定額で金を少しずつ購入。')"><a href="/products_lineup/">詳細を見る</a></button>
+                </div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
+    <section id="about" class="company-info">
+        <h2>会社概要</h2>
+        <div class="info-container">
+            <div class="info-item">
+                <h3>会社名</h3>
+                <p>日日日証券株式会社</p>
+            </div>
+            <div class="info-item">
+                <h3>所在地</h3>
+                <p>東京都中央区日本橋100丁目100番100号</p>
+            </div>
+            <div class="info-item">
+                <h3>設立</h3>
+                <p>2000年4月1日</p>
+            </div>
+            <div class="info-item">
+                <h3>資本金</h3>
+                <p>10億円</p>
+            </div>
+            <div class="info-item">
+                <h3>事業内容</h3>
+                <p>金融商品取引業、投資顧問業、その他金融サービス</p>
+            </div>
+        </div>
+    </section> 
+    <section id="contact" class="contact-form">
+        <h2>お問い合わせ</h2>
+        <form action="/submit_form" method="post">
+            <div class="form-group">
+                <label for="name">お名前</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">メールアドレス</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">メッセージ</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">送信</button>
+        </form>
+    </section>
+    <section id="second-header">
+        <div class="info-links">
+            <ul>
+                <li><a href="/#about">会社概要</a></li>
+                <li><a href="/privacy/">個人情報保護方針</a></li>
+                <li><a href="/terms/">ご利用条件</a></li>
+                <li><a href="/risk/">リスク情報</a></li>
+                <li><a href="/fees/">手数料について</a></li>
+                <li><a href="/law/">関係法令</a></li>
+                <li><a href="/antisocial/">反社会的勢力排除方針</a></li>
+            </ul>
+        </div>
+        <div class="contact-info">
+            <p>お問い合わせ：0120-123-456</p>
+            <p>受付時間：平日 9:00 - 17:00</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 hihihi securities Co., Ltd. All rights reserved.</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
